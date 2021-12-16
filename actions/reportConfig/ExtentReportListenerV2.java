@@ -16,12 +16,14 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import comomns.GlobalConstants;
+
 public class ExtentReportListenerV2 implements IReporter {
     private ExtentReports extent;
 	private ExtentTest test;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-		extent = new ExtentReports(System.getProperty("user.dir") + "/extentReportV2/ExtentReport.html", true);
+		extent = new ExtentReports(GlobalConstants.PROJECT_PATH + "/extentReportV2/ExtentReport.html", true);
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
 
