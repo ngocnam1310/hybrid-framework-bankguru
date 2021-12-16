@@ -19,12 +19,14 @@ public class ValidationNewCustomer extends BaseTest{
 	LoginPO login;
 	NewCustomerPO newcustomer;
 	String email, userid, password;
+	String url;
   @Parameters("browser")
   @BeforeClass
   public void beforeClass(String browserName) {
 	  driver = getBrowserDriver(browserName);
 	  register = PageGeneratorManager.getRegisterPage(driver);
 	  email ="autotest" + generateFakeNumber() +"@mail.com";
+	  url="http://demo.guru99.com/v4/index.php";
 	  register.inputEmailToTextbox(email);
 	  userid = register.getUserID();
 	  password = register.getPassword();
@@ -33,7 +35,7 @@ public class ValidationNewCustomer extends BaseTest{
   
   @Test
   public void TC_01_Verify_Name_Field() {
-	  login.openLoginurl();
+	  login.openLoginurl(url);
 	  login = PageGeneratorManager.getLoginPage(driver);
 	  login.loginGuruBank();
 	  newcustomer = login.clickToNewCustomer();
@@ -99,6 +101,19 @@ public class ValidationNewCustomer extends BaseTest{
 	  verifyEquals(newcustomer.getErrorTelephoneMessage(), "Special characters are not allowed");	
 	  newcustomer.inputToTelephoneTextbox(" name");
 	  verifyEquals(newcustomer.getErrorTelephoneMessage(), "First character can not have space");	
+  }
+  @Test
+  public void TC_07_Email_Field() {
+	  newcustomer.inputToEmailTextbox("");
+	  verifyEquals(newcustomer.getErrorEmailMessage(), "Email-ID must not be blank");
+	  newcustomer.inputToEmailTextbox("123@");
+	  verifyEquals(newcustomer.getErrorEmailMessage(), "Email-ID is not valid");	
+	  newcustomer.inputToEmailTextbox(" name");
+	  verifyEquals(newcustomer.getErrorEmailMessage(), "Email-ID is not valid");	
+  }
+  @Test
+  public void TC_08_Verify_Field_Labels() {
+	  verifyTrue(newcustomer.verifyAllFieldInLables());
   }
   @AfterClass
   public void afterClass() {
