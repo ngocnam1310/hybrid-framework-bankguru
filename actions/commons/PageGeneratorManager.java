@@ -1,7 +1,8 @@
-package comomns;
+package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObject.EditCustomerPO;
 import pageObject.LoginPO;
 import pageObject.ManagerPO;
 import pageObject.NewCustomerPO;
@@ -19,5 +20,9 @@ public class PageGeneratorManager {
 	}
 	public static NewCustomerPO getNewCustomerPage(WebDriver driver) {
 		return new NewCustomerPO(driver);
+	}
+	public static EditCustomerPO getEditCustomerPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		return new EditCustomerPO(driver);
 	}
 }

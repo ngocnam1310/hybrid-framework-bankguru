@@ -31,5 +31,7 @@
 	<classpathentry kind="lib" path="libExtentV2/mongodb-driver-3.0.4.jar"/>
 	<classpathentry kind="lib" path="libExtentV2/mongodb-driver-core-3.0.4.jar"/>
 	<classpathentry kind="lib" path="libExtentV2/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="libraris/commons-logging-1.2.1.1.jar"/>
+	<classpathentry kind="lib" path="libraris/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

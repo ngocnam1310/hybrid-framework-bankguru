@@ -1,0 +1,42 @@
+[INFO ] [2021-12-21 15:17:30,813] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-21 15:17:30,818] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-21 15:17:31,975] Pre-condition - Step 01: Open login Page
+[INFO ] [2021-12-21 15:17:34,017] Pre-condition - Step 02: Input userid and password
+[INFO ] [2021-12-21 15:17:35,801] Pre-condition - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-21 15:17:36,419] Pre-condition - Step 04: Input all field required
+[INFO ] [2021-12-21 15:18:03,252] Post-Condition: Close browser
+[INFO ] [2021-12-21 15:18:03,253] OS name = windows 10
+[INFO ] [2021-12-21 15:18:03,253] Driver instance name = windows 10
+[INFO ] [2021-12-21 15:18:39,723] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-21 15:18:39,728] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-21 15:18:40,996] Pre-condition - Step 01: Open login Page
+[INFO ] [2021-12-21 15:18:42,812] Pre-condition - Step 02: Input userid and password
+[INFO ] [2021-12-21 15:18:44,617] Pre-condition - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-21 15:18:45,200] Pre-condition - Step 04: Input all field required
+[INFO ] [2021-12-21 15:19:12,146] Post-Condition: Close browser
+[INFO ] [2021-12-21 15:19:12,146] OS name = windows 10
+[INFO ] [2021-12-21 15:19:12,147] Driver instance name = windows 10
+[INFO ] [2021-12-21 15:21:03,024] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-21 15:21:03,030] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-21 15:21:04,670] Pre-condition - Step 01: Open login Page
+[INFO ] [2021-12-21 15:21:06,351] Pre-condition - Step 02: Input userid and password
+[INFO ] [2021-12-21 15:21:08,567] Pre-condition - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-21 15:21:09,303] Pre-condition - Step 04: Input all field required
+[INFO ] [2021-12-21 15:21:28,713] Post-Condition: Close browser
+[INFO ] [2021-12-21 15:21:28,713] OS name = windows 10
+[INFO ] [2021-12-21 15:21:28,713] Driver instance name = windows 10
+[INFO ] [2021-12-21 15:21:28,971] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'G07VNXDFVLTTI25', ip: '10.164.178.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211119140621, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 16916, moz:profile: C:\Users\ttimem25\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d5be3f90-d0fd-410c-84a5-8f5a8ccca5ba
+[INFO ] [2021-12-21 15:23:04,296] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-21 15:23:04,301] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-21 15:23:05,499] Pre-condition - Step 01: Open login Page
+[INFO ] [2021-12-21 15:23:07,282] Pre-condition - Step 02: Input userid and password
+[INFO ] [2021-12-21 15:23:09,066] Pre-condition - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-21 15:23:09,631] Pre-condition - Step 04: Input all field required
+[INFO ] [2021-12-21 15:23:36,548] Post-Condition: Close browser
+[INFO ] [2021-12-21 15:23:36,549] OS name = windows 10
+[INFO ] [2021-12-21 15:23:36,549] Driver instance name = windows 10

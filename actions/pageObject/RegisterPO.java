@@ -2,7 +2,8 @@ package pageObject;
 
 import org.openqa.selenium.WebDriver;
 
-import comomns.BasePage;
+import commons.BasePage;
+import commons.PageGeneratorManager;
 import pageUIs.RegisterPageUI;
 
 public class RegisterPO extends BasePage{
@@ -13,7 +14,6 @@ public class RegisterPO extends BasePage{
 	public void inputEmailToTextbox(String email) {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_TEXT_BOX_ID);
 		sendKeyToElement(driver, RegisterPageUI.EMAIL_TEXT_BOX_ID, email);
-		clickToElement(driver, RegisterPageUI.SUBMIT_BUTTON);
 	}
 	public String getUserID() {
 		waitForElementVisible(driver,RegisterPageUI.USER_ID);
@@ -22,6 +22,10 @@ public class RegisterPO extends BasePage{
 	public String getPassword() {
 		waitForElementVisible(driver,RegisterPageUI.PASSWORD);
 		return getElementText(driver,RegisterPageUI.PASSWORD);
+	}
+	public RegisterPO clickButtonSubmit() {
+		clickToElement(driver, RegisterPageUI.SUBMIT_BUTTON);
+		return PageGeneratorManager.getRegisterPage(driver);	
 	}
 
 }

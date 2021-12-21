@@ -1,0 +1,9 @@
+[INFO ] [2021-12-21 15:23:04,296] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-21 15:23:04,301] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-21 15:23:05,499] Pre-condition - Step 01: Open login Page
+[INFO ] [2021-12-21 15:23:07,282] Pre-condition - Step 02: Input userid and password
+[INFO ] [2021-12-21 15:23:09,066] Pre-condition - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-21 15:23:09,631] Pre-condition - Step 04: Input all field required
+[INFO ] [2021-12-21 15:23:36,548] Post-Condition: Close browser
+[INFO ] [2021-12-21 15:23:36,549] OS name = windows 10
+[INFO ] [2021-12-21 15:23:36,549] Driver instance name = windows 10
