@@ -15,7 +15,7 @@ import pageObject.NewCustomerPO;
 import pageObject.RegisterPO;
 import pageUIs.BasePageUI;
 
-public class EditCustomer extends BaseTest {
+public class ValidationEditCustomer extends BaseTest {
 	String email, userid, password, customerID;
 
 	@Parameters("browser")

@@ -17,7 +17,7 @@ import pageObject.NewCustomerPO;
 import pageObject.RegisterPO;
 import pageUIs.BasePageUI;
 
-public class Payment extends BaseTest{
+public class ValidationPayment extends BaseTest{
 	String email, userid, password, customerID;
 	@Parameters("browser")
 	@BeforeClass

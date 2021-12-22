@@ -16,7 +16,7 @@ import pageObject.NewCustomerPO;
 import pageObject.RegisterPO;
 import pageUIs.BasePageUI;
 
-public class DeleteCustomer extends BaseTest {
+public class ValidationDeleteCustomer extends BaseTest {
 	String email, userid, password, customerID;
 
 	@Parameters("browser")
