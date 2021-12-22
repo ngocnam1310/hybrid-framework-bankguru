@@ -27,5 +27,9 @@ public class NewCustomerPO extends BasePage{
 		waitForElementVisible(driver, NewCustomerPageUI.CUSTOMER_ID);
 		return getElementText(driver, NewCustomerPageUI.CUSTOMER_ID);
 	}
+	public String verifyCustomerRegisterSuccess() {
+		waitForElementVisible(driver, NewCustomerPageUI.CONFIRM_REGISTER_SUCCESS);
+		return getElementText(driver, NewCustomerPageUI.CONFIRM_REGISTER_SUCCESS);
+	}
 	
 }

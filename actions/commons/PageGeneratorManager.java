@@ -2,9 +2,11 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObject.DeleteCustomerPO;
 import pageObject.EditCustomerPO;
 import pageObject.LoginPO;
 import pageObject.ManagerPO;
+import pageObject.NewAccountPO;
 import pageObject.NewCustomerPO;
 import pageObject.RegisterPO;
 
@@ -24,5 +26,13 @@ public class PageGeneratorManager {
 	public static EditCustomerPO getEditCustomerPage(WebDriver driver) {
 		// TODO Auto-generated method stub
 		return new EditCustomerPO(driver);
+	}
+	public static DeleteCustomerPO getDeleteCustomerPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		return new DeleteCustomerPO(driver);
+	}
+	public static NewAccountPO getNewAccountPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		return new NewAccountPO(driver);
 	}
 }

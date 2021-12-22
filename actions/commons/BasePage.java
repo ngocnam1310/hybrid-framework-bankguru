@@ -143,6 +143,10 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_VALUE, fieldName);
 		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_VALUE, fieldName);
 	}
+	public String getMessageSuccessByID(WebDriver driver, String... idFunction) {
+		waitForElementVisible(driver, BasePageUI.CONFIRM_MESSAGE_SUCCESS_BY_ID, idFunction);
+		return getElementText(driver, BasePageUI.CONFIRM_MESSAGE_SUCCESS_BY_ID, idFunction);		
+	}
 	
 	
 	long shorttime = 5;

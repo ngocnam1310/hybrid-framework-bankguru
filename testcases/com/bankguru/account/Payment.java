@@ -12,13 +12,13 @@ import commons.PageGeneratorManager;
 import pageObject.DeleteCustomerPO;
 import pageObject.EditCustomerPO;
 import pageObject.LoginPO;
+import pageObject.NewAccountPO;
 import pageObject.NewCustomerPO;
 import pageObject.RegisterPO;
 import pageUIs.BasePageUI;
 
-public class DeleteCustomer extends BaseTest {
+public class Payment extends BaseTest{
 	String email, userid, password, customerID;
-
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -32,8 +32,10 @@ public class DeleteCustomer extends BaseTest {
 		registerPage.clickButtonSubmit();
 		userid = registerPage.getUserID();
 		password = registerPage.getPassword();
-
-		log.info("Pre-condition - Step 01: Open login Page");
+	}
+	@Test
+	public void TC01_Create_New_Account() {
+		log.info("User_01_Create_Customer - Step 01: Open login Page");
 		registerPage.openPageUrl(driver, GlobalConstants.LOGIN_PAGE_URL);
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 
@@ -56,58 +58,67 @@ public class DeleteCustomer extends BaseTest {
 		newcustomerPage.inputTextboxByFieldName(driver, "123456", "password");
 		newcustomerPage.clickButtonByValue(driver, "Submit");
 		customerID = newcustomerPage.getCustomerID();
-
-		log.info("User_01_Edit_Customer - Step 01: Open Edit Customer");
-		newcustomerPage.selectSubMenuBySubName(driver, "Delete Customer");
-		deletecustomerPage = PageGeneratorManager.getDeleteCustomerPage(driver);
+		verifyEquals(newcustomerPage.verifyCustomerRegisterSuccess(), "Customer Registered Successfully!!!"); 
+		
 	}
-
 	@Test
-	public void TC_Verify_Delete_Customer_Field() {
-		log.info("User_01_Verify_Delete - Step 01: Input Customer ID empty by field name");
+	public void TC02_Edit_Customer_Account() {
+		log.info("User_01_Edit_Customer - Step 01: Open Edit Customer");
+		newcustomerPage.selectSubMenuBySubName(driver, "Edit Customer");
+		editcustomerPage = PageGeneratorManager.getEditCustomerPage(driver);
+
+		log.info("User_01_Edit_Customer - Step 01: Input customer ID " + customerID);
+		editcustomerPage.inputTextboxByFieldName(driver, customerID, "cusid");
+
+		log.info("User_01_Edit_Customer - Step 01: Click to submit");
+		editcustomerPage.clickButtonByValue(driver, "Submit");
 		
-		deletecustomerPage.inputTextboxByFieldName(driver," ", "cusid");
-
-		log.info("User_01_Verify_Delete - Step 02: Verify Customer ID empty by field name");
-		verifyEquals(deletecustomerPage.getErrorMessageByFieldName(driver, "cusid"), "Customer ID is required");
-
-		log.info("User_01_Verify_Delete - Step 03: Input Customer ID with numberic");
-		deletecustomerPage.inputTextboxByFieldName(driver, "automantion123", "cusid");
-
-		log.info("User_01_Verify_Delete - Step 04: Verify Customer ID with numberic");
-		verifyEquals(deletecustomerPage.getErrorMessageByFieldName(driver, "cusid"), "Characters are not allowed");
-
-		log.info("User_01_Verify_Delete - Step 05: Input Customer ID with Special characters");
-		deletecustomerPage.inputTextboxByFieldName(driver, "@#$automantion", "cusid");
-
-		log.info("User_01_Verify_Delete - Step 06: Verify Customer ID Special characters");
-		verifyEquals(deletecustomerPage.getErrorMessageByFieldName(driver, "cusid"), "Special characters are not allowed");
-
-		log.info("User_01_Verify_Delete - Step 07: Input Customer ID with character Blank space");
-		deletecustomerPage.inputTextboxByFieldName(driver, "auto mantion", "cusid");
-
-		log.info("User_01_Verify_Delete - Step 08: Verify Customer ID with character Blank space");
-		verifyEquals(deletecustomerPage.getErrorMessageByFieldName(driver, "cusid"), "Characters are not allowed");
+		log.info("User_01_Edit_Customer - Step 01: Update value Address, City, State, Pin");
+		editcustomerPage.inputToAddressTextbox("Ha Noi");
+		editcustomerPage.inputTextboxByFieldName(driver, "Ha Noi", "city");
+		editcustomerPage.inputTextboxByFieldName(driver, "Viet Nam", "state");
+		editcustomerPage.inputTextboxByFieldName(driver, "100000", "pinno");
 		
-		log.info("User_01_Verify_Delete - Step 09: Input Customer ID with first character Blank space");
-		deletecustomerPage.inputTextboxByFieldName(driver, " automantion", "cusid");
-
-		log.info("User_01_Verify_Delete - Step 10: Verify Customer ID with first character Blank space");
-		verifyEquals(deletecustomerPage.getErrorMessageByFieldName(driver, "cusid"), "First character can not have space");
-
+		editcustomerPage.clickButtonByValue(driver, "Submit");
+		
+		
 	}
-
+	@Test
+	public void TC03_Add_New_Account() {
+		log.info("User_01_Add_New_Account - Step 01: Open New Account Page");
+		editcustomerPage.selectSubMenuBySubName(driver, "New Account");
+		newaccountPage = PageGeneratorManager.getNewAccountPage(driver);
+		
+		log.info("User_01_Add_New_Account - Step 01: Input data CustomerID , Account Type and Initial deposit");
+		newaccountPage.inputTextboxByFieldName(driver, customerID, "cusid");
+		newaccountPage.inputTextboxByFieldName(driver, "50000", "inideposit");
+		
+		log.info("User_01_Add_New_Account - Step 01: Click button submit");
+		newaccountPage.clickButtonByValue(driver, "submit");
+		
+		log.info("User_01_Add_New_Account - Step 01: Verify account generated success");
+		verifyEquals(newaccountPage.getMessageSuccessByID(driver, "account"),"Account Generated Successfully!!!");
+	}
+	@Test
+	public void TC04_Edit_Account() {
+		
+	}
+	@Test
+	public void TC05_Transfer_Money() {
+		
+	}
+	
 	@Parameters("browser")
 	@AfterClass(alwaysRun = true)
 	public void cleanBrowser(String browserName) {
 		log.info("Post-Condition: Close browser");
 		cleanBrowserAndDriver();
 	}
-
 	WebDriver driver;
 	RegisterPO registerPage;
 	LoginPO loginPage;
 	NewCustomerPO newcustomerPage;
 	EditCustomerPO editcustomerPage;
 	DeleteCustomerPO deletecustomerPage;
+	NewAccountPO newaccountPage;
 }
