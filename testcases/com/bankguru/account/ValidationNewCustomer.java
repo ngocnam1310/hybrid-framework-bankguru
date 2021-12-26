@@ -5,12 +5,14 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
+import environmentConfig.Environment;
 import pageObject.LoginPO;
 import pageObject.NewCustomerPO;
 import pageObject.RegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 
@@ -20,10 +22,13 @@ public class ValidationNewCustomer extends BaseTest{
 	LoginPO login;
 	NewCustomerPO newcustomer;
 	String email, userid, password;
-  @Parameters("browser")
+	Environment environment;
+  @Parameters({"browser","url"})
   @BeforeClass
-  public void beforeClass(String browserName) {
-	  driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String url) {
+	  ConfigFactory.setProperty("env", url);
+	  environment = ConfigFactory.create(Environment.class);
+		driver = getBrowserDriver(browserName, environment.appurl());
 	  log.info("Pre-condition - Step 01: Open Browser" + browserName + "' and navigate to '" );
 	  register = PageGeneratorManager.getRegisterPage(driver);
 	  email ="autotest" + generateFakeNumber() +"@mail.com";

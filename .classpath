@@ -33,5 +33,10 @@
 	<classpathentry kind="lib" path="libExtentV2/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="libraris/commons-logging-1.2.1.1.jar"/>
 	<classpathentry kind="lib" path="libraris/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="Owner/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="Owner/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="Owner/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="Owner/mockito-core-2.15.0.jar"/>
+	<classpathentry kind="lib" path="Owner/owner-1.0.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

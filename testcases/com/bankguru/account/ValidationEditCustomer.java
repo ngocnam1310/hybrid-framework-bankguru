@@ -20,8 +20,8 @@ public class ValidationEditCustomer extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String url) {
+		driver = getBrowserDriver(browserName,url);
 		log.info("Pre-condition - Step 01: Open Browser" + browserName + "' and navigate to '");
 		registerPage = PageGeneratorManager.getRegisterPage(driver);
 		email = "autotest" + generateFakeNumber() + "@mail.com";

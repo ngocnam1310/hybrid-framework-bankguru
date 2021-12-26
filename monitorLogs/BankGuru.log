@@ -46,3 +46,168 @@
 [INFO ] [2021-12-22 09:01:40,239] Post-Condition: Close browser
 [INFO ] [2021-12-22 09:01:40,239] OS name = windows 10
 [INFO ] [2021-12-22 09:01:40,240] Driver instance name = windows 10
+[INFO ] [2021-12-25 09:47:01,384] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-25 09:47:01,392] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-25 09:47:21,656] Post-Condition: Close browser
+[INFO ] [2021-12-25 09:47:21,656] OS name = windows 10
+[INFO ] [2021-12-25 09:47:21,657] Driver instance name = windows 10
+[INFO ] [2021-12-25 10:07:15,352] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-25 10:07:15,363] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-25 10:07:30,040] Post-Condition: Close browser
+[INFO ] [2021-12-25 10:07:30,041] OS name = windows 10
+[INFO ] [2021-12-25 10:07:30,041] Driver instance name = windows 10
+[INFO ] [2021-12-25 10:07:30,061] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-A2BESFR', ip: '192.168.10.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3552, moz:profile: C:\Users\admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8dd0f8eb-601b-47d9-a5b4-4d7a37bf5e4d
+[INFO ] [2021-12-25 10:07:58,972] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-25 10:07:58,977] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-25 10:08:01,198] User_01_Verify - Step 01: Open login Page
+[INFO ] [2021-12-25 10:08:03,590] User_01_Verify - Step 02: Input userid and password
+[INFO ] [2021-12-25 10:08:05,577] User_01_Verify - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-25 10:08:06,653] User_01_Verify - Step 04: Input Customer Name empty by field name
+[INFO ] [2021-12-25 10:08:07,172] User_01_Verify - Step 05: Verify Customer Name empty by field name
+[INFO ] [2021-12-25 10:08:07,418]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:07,418] User_01_Verify - Step 06: Input Customer Name with numberic
+[INFO ] [2021-12-25 10:08:07,763] User_01_Verify - Step 07: Verify Customer Name with numberic
+[INFO ] [2021-12-25 10:08:07,861]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:07,861] User_01_Verify - Step 08: Input Customer Name with Special characters
+[INFO ] [2021-12-25 10:08:08,077] User_01_Verify - Step 09: Verify Customer Name Special characters
+[INFO ] [2021-12-25 10:08:08,170]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:08,170] User_01_Verify - Step 10: Input Customer Name with character Blank space
+[INFO ] [2021-12-25 10:08:08,347] User_01_Verify - Step 11: Verify Customer Name with character Blank space
+[INFO ] [2021-12-25 10:08:08,428]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:08,439] User_01_Verify - Step 01: Input Address filed is empty
+[INFO ] [2021-12-25 10:08:08,592] User_01_Verify - Step 02: Verify Customer Name empty by field name
+[INFO ] [2021-12-25 10:08:08,729]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:08,729] User_01_Verify - Step 03: Input Address filed is empty
+[INFO ] [2021-12-25 10:08:08,946] User_01_Verify - Step 04: Verify Customer Name empty by field name
+[INFO ] [2021-12-25 10:08:09,041]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:09,046] User_01_Verify - Step 01: Input City with empty
+[INFO ] [2021-12-25 10:08:09,200] User_01_Verify - Step 02: Verify City with empty
+[INFO ] [2021-12-25 10:08:09,311]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:09,312] User_01_Verify - Step 03: Input City with First character with character Blank space
+[INFO ] [2021-12-25 10:08:09,521] User_01_Verify - Step 04: Input City with First character with character Blank space 
+[INFO ] [2021-12-25 10:08:09,620]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:09,620] User_01_Verify - Step 05: Input City with numberic
+[INFO ] [2021-12-25 10:08:09,815] User_01_Verify - Step 06: Verify City with numberic
+[INFO ] [2021-12-25 10:08:09,894]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:09,895] User_01_Verify - Step 07: Input City with Special character
+[INFO ] [2021-12-25 10:08:10,067] User_01_Verify - Step 08: Verify City with Special character
+[INFO ] [2021-12-25 10:08:10,146]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:10,152] User_01_Verify - Step 01: Input State with empty
+[INFO ] [2021-12-25 10:08:10,373] User_01_Verify - Step 02: Verify State with empty
+[INFO ] [2021-12-25 10:08:10,497]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:10,498] User_01_Verify - Step 03: Input State with character Blank space
+[INFO ] [2021-12-25 10:08:10,687] User_01_Verify - Step 04: Verify State with character Blank space
+[INFO ] [2021-12-25 10:08:10,763]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:10,763] User_01_Verify - Step 05: Input State with numberic
+[INFO ] [2021-12-25 10:08:10,941] User_01_Verify - Step 06: Verify State with numberic
+[INFO ] [2021-12-25 10:08:11,012]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:11,012] User_01_Verify - Step 07: Input State with Special characters
+[INFO ] [2021-12-25 10:08:11,178] User_01_Verify - Step 08: Verify State with Special character
+[INFO ] [2021-12-25 10:08:11,250]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:11,254] User_01_Verify - Step 01: Input Pin with character value
+[INFO ] [2021-12-25 10:08:11,412] User_01_Verify - Step 02: Verify Customer Name with character value
+[INFO ] [2021-12-25 10:08:11,475]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:11,475] User_01_Verify - Step 03: Input City with empty
+[INFO ] [2021-12-25 10:08:11,661] User_01_Verify - Step 04: Verify Customer Name with empty
+[INFO ] [2021-12-25 10:08:11,737]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:11,737] User_01_Verify - Step 05: Input City with less than 6 digit
+[INFO ] [2021-12-25 10:08:11,900] User_01_Verify - Step 06: Verify Customer Name with less than 6 digit
+[INFO ] [2021-12-25 10:08:11,977]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:11,977] User_01_Verify - Step 07: Input City with Special characters
+[INFO ] [2021-12-25 10:08:12,132] User_01_Verify - Step 08: Verify Customer Name with Special character
+[INFO ] [2021-12-25 10:08:12,211]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:12,211] User_01_Verify - Step 09: Input City with character Blank space
+[INFO ] [2021-12-25 10:08:12,377] User_01_Verify - Step 10: Verify Customer Name with character Blank space
+[INFO ] [2021-12-25 10:08:12,448]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:12,675]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:12,920]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:13,158]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:13,394]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:13,663]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:13,918]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:14,169]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:08:14,271]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:08:14,274] Post-Condition: Close browser
+[INFO ] [2021-12-25 10:08:14,274] OS name = windows 10
+[INFO ] [2021-12-25 10:08:14,274] Driver instance name = windows 10
+[INFO ] [2021-12-25 10:13:48,772] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
+[INFO ] [2021-12-25 10:13:48,776] Pre-condition - Step 02: Register Account
+[INFO ] [2021-12-25 10:13:51,006] User_01_Verify - Step 01: Open login Page
+[INFO ] [2021-12-25 10:13:53,009] User_01_Verify - Step 02: Input userid and password
+[INFO ] [2021-12-25 10:13:55,440] User_01_Verify - Step 03: Select Sub Menu By Name Menu
+[INFO ] [2021-12-25 10:13:56,620] User_01_Verify - Step 04: Input Customer Name empty by field name
+[INFO ] [2021-12-25 10:13:57,192] User_01_Verify - Step 05: Verify Customer Name empty by field name
+[INFO ] [2021-12-25 10:13:57,435]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:13:57,435] User_01_Verify - Step 06: Input Customer Name with numberic
+[INFO ] [2021-12-25 10:13:58,009] User_01_Verify - Step 07: Verify Customer Name with numberic
+[INFO ] [2021-12-25 10:13:58,112]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:13:58,113] User_01_Verify - Step 08: Input Customer Name with Special characters
+[INFO ] [2021-12-25 10:13:58,438] User_01_Verify - Step 09: Verify Customer Name Special characters
+[INFO ] [2021-12-25 10:13:58,544]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:13:58,544] User_01_Verify - Step 10: Input Customer Name with character Blank space
+[INFO ] [2021-12-25 10:13:58,750] User_01_Verify - Step 11: Verify Customer Name with character Blank space
+[INFO ] [2021-12-25 10:13:58,850]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:13:58,871] User_01_Verify - Step 01: Input Address filed is empty
+[INFO ] [2021-12-25 10:13:59,053] User_01_Verify - Step 02: Verify Customer Name empty by field name
+[INFO ] [2021-12-25 10:13:59,227]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:13:59,228] User_01_Verify - Step 03: Input Address filed is empty
+[INFO ] [2021-12-25 10:13:59,429] User_01_Verify - Step 04: Verify Customer Name empty by field name
+[INFO ] [2021-12-25 10:13:59,526]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:13:59,531] User_01_Verify - Step 01: Input City with empty
+[INFO ] [2021-12-25 10:13:59,721] User_01_Verify - Step 02: Verify City with empty
+[INFO ] [2021-12-25 10:13:59,811]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:13:59,811] User_01_Verify - Step 03: Input City with First character with character Blank space
+[INFO ] [2021-12-25 10:14:00,002] User_01_Verify - Step 04: Input City with First character with character Blank space 
+[INFO ] [2021-12-25 10:14:00,080]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:00,080] User_01_Verify - Step 05: Input City with numberic
+[INFO ] [2021-12-25 10:14:00,257] User_01_Verify - Step 06: Verify City with numberic
+[INFO ] [2021-12-25 10:14:00,350]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:00,350] User_01_Verify - Step 07: Input City with Special character
+[INFO ] [2021-12-25 10:14:00,540] User_01_Verify - Step 08: Verify City with Special character
+[INFO ] [2021-12-25 10:14:00,614]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:00,618] User_01_Verify - Step 01: Input State with empty
+[INFO ] [2021-12-25 10:14:00,766] User_01_Verify - Step 02: Verify State with empty
+[INFO ] [2021-12-25 10:14:00,854]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:14:00,854] User_01_Verify - Step 03: Input State with character Blank space
+[INFO ] [2021-12-25 10:14:01,032] User_01_Verify - Step 04: Verify State with character Blank space
+[INFO ] [2021-12-25 10:14:01,106]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:01,106] User_01_Verify - Step 05: Input State with numberic
+[INFO ] [2021-12-25 10:14:01,393] User_01_Verify - Step 06: Verify State with numberic
+[INFO ] [2021-12-25 10:14:01,521]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:01,521] User_01_Verify - Step 07: Input State with Special characters
+[INFO ] [2021-12-25 10:14:01,713] User_01_Verify - Step 08: Verify State with Special character
+[INFO ] [2021-12-25 10:14:01,842]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:01,847] User_01_Verify - Step 01: Input Pin with character value
+[INFO ] [2021-12-25 10:14:02,025] User_01_Verify - Step 02: Verify Customer Name with character value
+[INFO ] [2021-12-25 10:14:02,138]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:02,138] User_01_Verify - Step 03: Input City with empty
+[INFO ] [2021-12-25 10:14:02,326] User_01_Verify - Step 04: Verify Customer Name with empty
+[INFO ] [2021-12-25 10:14:02,420]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:14:02,420] User_01_Verify - Step 05: Input City with less than 6 digit
+[INFO ] [2021-12-25 10:14:02,625] User_01_Verify - Step 06: Verify Customer Name with less than 6 digit
+[INFO ] [2021-12-25 10:14:02,698]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:02,698] User_01_Verify - Step 07: Input City with Special characters
+[INFO ] [2021-12-25 10:14:02,858] User_01_Verify - Step 08: Verify Customer Name with Special character
+[INFO ] [2021-12-25 10:14:02,936]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:02,936] User_01_Verify - Step 09: Input City with character Blank space
+[INFO ] [2021-12-25 10:14:03,119] User_01_Verify - Step 10: Verify Customer Name with character Blank space
+[INFO ] [2021-12-25 10:14:03,192]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:03,443]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:14:03,698]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:03,964]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:04,202]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:04,488]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:14:04,758]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:05,089]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-12-25 10:14:05,197]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-25 10:14:05,202] Post-Condition: Close browser
+[INFO ] [2021-12-25 10:14:05,202] OS name = windows 10
+[INFO ] [2021-12-25 10:14:05,203] Driver instance name = windows 10
+[INFO ] [2021-12-25 10:14:21,111] Post-Condition: Close browser
+[INFO ] [2021-12-25 10:14:21,112] OS name = windows 10
+[INFO ] [2021-12-25 10:14:21,115] Driver instance name = windows 10

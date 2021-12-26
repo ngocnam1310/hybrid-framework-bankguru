@@ -1,25 +1,3 @@
-[INFO ] [2021-12-22 09:01:28,285] Pre-condition - Step 01: Open Browserfirefox' and navigate to '
-[INFO ] [2021-12-22 09:01:28,291] Pre-condition - Step 02: Register Account
-[INFO ] [2021-12-22 09:01:29,522] Pre-condition - Step 01: Open login Page
-[INFO ] [2021-12-22 09:01:32,036] Pre-condition - Step 02: Input userid and password
-[INFO ] [2021-12-22 09:01:33,670] Pre-condition - Step 03: Select Sub Menu By Name Menu
-[INFO ] [2021-12-22 09:01:34,344] Pre-condition - Step 04: Input all field required
-[INFO ] [2021-12-22 09:01:37,702] User_01_Edit_Customer - Step 01: Open Edit Customer
-[INFO ] [2021-12-22 09:01:39,112] User_01_Verify_Delete - Step 01: Input Customer ID empty by field name
-[INFO ] [2021-12-22 09:01:39,305] User_01_Verify_Delete - Step 02: Verify Customer ID empty by field name
-[INFO ] [2021-12-22 09:01:39,357]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-12-22 09:01:39,357] User_01_Verify_Delete - Step 03: Input Customer ID with numberic
-[INFO ] [2021-12-22 09:01:39,533] User_01_Verify_Delete - Step 04: Verify Customer ID with numberic
-[INFO ] [2021-12-22 09:01:39,602]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-12-22 09:01:39,602] User_01_Verify_Delete - Step 05: Input Customer ID with Special characters
-[INFO ] [2021-12-22 09:01:39,830] User_01_Verify_Delete - Step 06: Verify Customer ID Special characters
-[INFO ] [2021-12-22 09:01:39,880]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-12-22 09:01:39,881] User_01_Verify_Delete - Step 07: Input Customer ID with character Blank space
-[INFO ] [2021-12-22 09:01:40,004] User_01_Verify_Delete - Step 08: Verify Customer ID with character Blank space
-[INFO ] [2021-12-22 09:01:40,067]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-12-22 09:01:40,068] User_01_Verify_Delete - Step 09: Input Customer ID with first character Blank space
-[INFO ] [2021-12-22 09:01:40,192] User_01_Verify_Delete - Step 10: Verify Customer ID with first character Blank space
-[INFO ] [2021-12-22 09:01:40,236]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-12-22 09:01:40,239] Post-Condition: Close browser
-[INFO ] [2021-12-22 09:01:40,239] OS name = windows 10
-[INFO ] [2021-12-22 09:01:40,240] Driver instance name = windows 10
+[INFO ] [2021-12-25 10:14:21,111] Post-Condition: Close browser
+[INFO ] [2021-12-25 10:14:21,112] OS name = windows 10
+[INFO ] [2021-12-25 10:14:21,115] Driver instance name = windows 10
